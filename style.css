@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Shadows+Into+Light&display=swap');
+
+* {
+    font-family: 'Shadows Into Light', cursive;
+}
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+.top {
+    margin: 0 auto;
+    width: 100%;
+}
+.top h1 {
+    text-align: center;
+    font-size: 34px;
+}
+.top nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: solid 2px black;
+    display: block;
+    border-radius: 2.5px;
+}
+.top nav a:hover {
+    background: #383838;
+    color: white;
+}
+.top nav a.home {
+    padding: 5px 25.25px;
+}
+.top nav a.about {
+    padding: 5px 24.8px;
+}
+.top nav a.projects {
+    padding: 5px 19px;
+}
+.top nav {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.name-w-image {
+    background-image: url(photos/challenger.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 90%;
+    margin: 15px auto 15px auto;
+    border: black solid 5px;
+    border-radius: 5px;
+    padding: 10px 0 0 0;
+    text-align: center;
+    height: 600px;
+}
+.name-w-image h2 {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    -webkit-text-stroke: .5px red;
+    font-family: 'Nerko One', cursive;
+}
+.name-w-image a {
+    border: solid red 1px;
+    background-color: gray;
+    color: white;
+    text-decoration: none !important;
+    padding: 8px 15px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+.name-w-image a:hover {
+    border: gray solid 1px;
+    color:black;
+    background-color: red;
+}
+.project-gallery div {
+    width: 40%;
+    margin: 20px 2px;
+    text-align: center;
+}
+.project-gallery div img {
+    width: 100%;
+    border: black 3px solid;
+    border-radius: 2px;
+}
+.project-gallery {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+footer {
+    border-top: rgb(170, 170, 170) solid 2px;
+    text-align: center;
+    height: 90px;
+    background-color:rgb(219, 218, 218);
+}
+footer a {
+    font-size: 22px;
+    text-decoration: none;
+}
+footer a:hover {
+    color:red;
+}
+footer p, footer a {
+    font-family: 'Times New Roman', Times, serif;
+}
+@media only screen and (max-width: 800px) {
+    .name-w-image {
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .name-w-image {
+        height: 250px
+    }
+    .top nav {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .name-w-image {
+        height: 170px;
+        margin-bottom: 2rem;
+    }
+    .name-w-image a {
+        margin-top: .1rem;
+    }
+    .project-gallery div {
+        width: 80%;
+        margin: 0;
+    }
+}
+
+
